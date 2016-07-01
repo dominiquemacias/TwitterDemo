@@ -85,7 +85,7 @@ class TwitterClient: BDBOAuth1SessionManager {
 
     
     
-    func userTimeline(screenname: String!, success: ([Tweet]) -> (), failure: (NSError) -> ()) {
+    func userTimeline(screenname: String, success: ([Tweet]) -> (), failure: (NSError) -> ()) {
         
         GET("1.1/statuses/user_timeline.json", parameters: screenname, progress: nil, success: { (task: NSURLSessionDataTask, response: AnyObject?) -> Void in
             let dictionaries = response as! [NSDictionary]

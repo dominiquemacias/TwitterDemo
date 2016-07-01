@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import MBProgressHUD
+
 
 class ComposeViewController: UIViewController {
 
@@ -29,12 +31,15 @@ class ComposeViewController: UIViewController {
     
     @IBAction func postButtonPressed(sender: AnyObject) {
         let status = composedTweetField.text
+        MBProgressHUD.showHUDAddedTo(self.view, animated: true)
         TwitterClient.sharedInstance.composePost(status, success: { (String) -> Void in
-            
+//            MBProgressHUD.hideHUDForView(self.view, animated: true)
+//            self.tabBarController?.selectedIndex = 0
             }) { (NSError) -> () in
                 
         }
-        
+        MBProgressHUD.hideHUDForView(self.view, animated: true)
+        navigationController?.popToRootViewControllerAnimated(true)
     }
     
     

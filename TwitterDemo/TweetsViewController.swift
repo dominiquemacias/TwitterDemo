@@ -16,7 +16,7 @@ class TweetsViewController: UIViewController, UITableViewDelegate, UITableViewDa
     let refreshControl = UIRefreshControl()
 //    var referenceCell: TweetsCell!
     var isMoreDataLoading = false
-    var loadedPostNumber = 10
+    var loadedPostNumber = 20
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,6 +32,11 @@ class TweetsViewController: UIViewController, UITableViewDelegate, UITableViewDa
 
         
         // Do any additional setup after loading the view.
+    }
+
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        fetchPosts()
     }
 
     override func didReceiveMemoryWarning() {
@@ -63,7 +68,7 @@ class TweetsViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     func fetchPosts() {
         
-        TwitterClient.sharedInstance.homeTimeline({ (tweets: [Tweet]) -> () in
+        TwitterClient.sharedInstance.homeTimeline(loadedPostNumber, success: { (tweets: [Tweet]) -> () in
             self.tweets = tweets
             
             self.tweetsTableView.reloadData()
