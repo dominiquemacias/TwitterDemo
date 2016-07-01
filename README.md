@@ -52,15 +52,23 @@ Please list two areas of the assignment you'd like to **discuss further with you
 Here's a walkthrough of implemented user stories:
 
 AutoLayout:
+
+
 <img src='https://i.imgur.com/TXpXsS9.gif' title='AutoLayout of Home Timeline' width='' alt='AutoLayout of Home Timeline' />
 
 Composing a Tweet: 
+
+
 <img src='https://i.imgur.com/O7taE4w.gif' title='Composing a Tweet' width='' alt='Composing a Tweet' />
 
 Profile of Any User: 
+
+
 <img src='https://i.imgur.com/sGVA4DB.gif' title='Profile of Any User' width='' alt='Profile of Any User' />
 
 Logging in with OAuth Login Flow: 
+
+
 <img src='https://i.imgur.com/TlRUITw.gif' title='Logging in with OAuth Login Flow' width='' alt='Logging in with OAuth Login Flow' />
 
 GIFs created with [LiceCap](http://www.cockos.com/licecap/).
