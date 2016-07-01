@@ -71,6 +71,12 @@ Logging in with OAuth Login Flow:
 
 <img src='https://i.imgur.com/TlRUITw.gif' title='Logging in with OAuth Login Flow' width='' alt='Logging in with OAuth Login Flow' />
 
+
+Favoriting / Retweeting: 
+
+
+<img src='https://i.imgur.com/T9aQNxS.gif' title='Favoriting / Retweeting' width='' alt='Favoriting / Retweeting' />
+
 GIFs created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
